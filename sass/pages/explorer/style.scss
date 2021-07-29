@@ -1,0 +1,48 @@
+.map {
+    background: $color-map;
+    text-align: center;
+}
+
+.ville {
+    display: flex;
+    justify-content: center;
+    background: $color-recherche-ville;
+    margin-top: -10px;
+    font-family: 'roboto';
+    box-shadow: inset 0px 5px 10px -5px rgba(78, 75, 75, 0.5); /* inset modifie l'ombre afin qu'elle soit tournée vers l'intérieur */
+
+    i {
+        margin-top: 15px;
+        font-size: 1em;
+    }
+
+    @media screen and (max-width: 500px) {
+        i {
+            margin-top: 20px;
+            margin-right: -5px;
+        }
+    }
+}
+
+.description {
+    text-align: center;
+
+    h1 {
+        font-size: 1.7em;
+        font-weight: bold;
+        margin: 30px;
+        font-family: 'roboto';
+    }
+
+    p {
+        font-size: 1.1em;
+        margin-top: -10px;
+        font-family: 'roboto';
+    }
+}
+
+@media screen and (max-width: 500px) {
+    p {
+        margin: 20px;
+    }
+}

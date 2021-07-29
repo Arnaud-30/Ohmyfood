@@ -1,0 +1,32 @@
+.pied_de_page {
+    background-color: #595959;
+    padding: 10px;
+
+    h2{
+        color: white;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.4em;
+        margin-left: 20px;
+    }
+}
+
+.list_footer {
+    margin-top: 10px;
+    margin-left: -20px;
+    list-style-type: none;
+
+    a {
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        border-bottom: 2px solid white;
+    }
+}
+
+i {
+    margin-right: 10px;
+}

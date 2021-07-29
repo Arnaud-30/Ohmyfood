@@ -1,0 +1,42 @@
+.restaurant {
+    background-color: $color-recherche-ville;
+}
+
+#ensemble_figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+figure {
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    width: 340px;
+    height: 260px;
+
+    img {
+        height: 180px;
+        width: 340px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+}
+
+.icon {
+    text-align: right;
+    color: black;
+    margin-top: -50px;
+}
+
+figcaption h2 {
+    font-size: 1.1em;
+    color: black;
+    margin-left: 15px;
+}
+
+figcaption h3 {
+    font-size: 0.9em;
+    color: black;
+    margin-left: 15px;
+    margin-top: -8px;
+}

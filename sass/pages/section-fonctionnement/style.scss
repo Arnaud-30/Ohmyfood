@@ -1,0 +1,76 @@
+section h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5em;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+
+    @media screen and (max-width: 767px) {
+        text-align: justify;
+        margin-left: 30px;
+        margin: 30px;
+        margin-top: 50px;
+    }
+}
+
+.number {
+    height: 13px;
+    width: 13px;
+    text-align: center;
+    margin-top: 44px;
+    margin-right: -15px;
+    background-color: $color-primaire;
+    color: white;
+    font-family: 'roboto';
+    border-radius: 100%;
+    padding: 7px;
+    position: relative;
+    line-height: 13px;
+}
+
+.fonctionnement {
+    display: flex;
+    justify-content: center;
+}
+
+section article h4 {
+    width: 300px;
+    height: 30px;
+    background-color: #f0eeee;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0px 5px 10px #b4b2b8;
+    padding: 20px;
+    line-height: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: 'roboto', sans-serif;
+    
+    &:hover {
+        background-color: rgb(147, 86, 220, 0.1);
+
+        i {
+            color: $color-primaire;
+        }
+    }
+}
+
+section article h4 i {
+        margin-right: 25px;
+        color: grey;
+        margin-left: 20px;
+        font-size: 1.3em;
+}
+
+@media screen and (max-width: 413px) {
+    section article h4 {
+        width: 270px;
+    }
+}
+
+section article h4 i  {
+    font-size: 1.3em;
+}
+
+section article {
+    margin-top: -15px;
+}
