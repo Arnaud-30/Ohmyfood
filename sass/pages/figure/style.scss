@@ -1,42 +1,119 @@
 .restaurant {
     background-color: $color-recherche-ville;
+
+    #h2_restaurant {
+        text-align: center;
+        font-size: 1.7em;
+        padding: 30px;
+
+        @media screen and (max-width: 500px) {
+            text-align: left;
+            margin-top: 50px;
+            padding-top: 60px;
+        }
+    }
 }
 
 #ensemble_figure {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    margin-bottom: -100px;
+    margin-top: -10px;
+    padding: 10px;
 }
 
 figure {
     border-radius: 20px 20px 20px 20px;
     background-color: white;
-    width: 340px;
-    height: 260px;
+    width: 800px;
+    height: 330px;
 
     img {
-        height: 180px;
-        width: 340px;
+        height: 250px;
+        width: 800px;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    figure {
+        width: 650px;
+        height: 270px;
+        margin-bottom: 10px;
+
+        img {
+            width: 650px;
+            height: 190px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 415px) {
+    figure {
+        width: 335px;
+        height: 250px;
+        margin-top: -20px;
+        margin-bottom: 40px;
+
+        img {
+            width: 335px;
+            height: 170px;
+        }
     }
 }
 
 .icon {
     text-align: right;
     color: black;
-    margin-top: -50px;
+    font-size: 1.5em;
+    margin-top: -60px;
+    margin-right: 20px;
 }
 
 figcaption h2 {
-    font-size: 1.1em;
+    font-size: 1.3em;
+    font-family: "roboto";
     color: black;
     margin-left: 15px;
+    margin-top: 10px;
 }
 
 figcaption h3 {
-    font-size: 0.9em;
-    color: black;
+    font-size: 1em;
+    font-family: "roboto";
+    color: rgb(51, 49, 49);
     margin-left: 15px;
     margin-top: -8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Nouveau {
+    width: 100px;
+    font-family: "roboto";
+    font-size: 1.2em;
+    padding: 7px;
+    margin-top: -280px;
+    margin-left: 650px;
+    position: relative;
+    background-color: $color-tertiaire;
+    text-align: center;
+    border-radius: 1px 1px 1px 1px;
+    color: #16a581;
+    font-weight: bold;
+
+    @media screen and (max-width: 800px) {
+            margin-left: 510px;
+            margin-top: -220px;
+    }
+
+    @media screen and (max-width: 415px) {
+        margin-left: 205px;
+        margin-top: -205px;
+    }
 }
