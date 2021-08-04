@@ -67,6 +67,12 @@ section article h4 i {
     }
 }
 
+@media screen and (max-width: 321px) {
+    section article h4 {
+        width: 245px;
+    }
+}
+
 section article h4 i  {
     font-size: 1.3em;
 }
