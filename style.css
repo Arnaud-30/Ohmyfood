@@ -249,11 +249,11 @@ figure img {
 }
 @media screen and (max-width: 376px) {
   figure {
-    width: 296px;
+    width: 290px;
     height: 220px;
   }
   figure img {
-    width: 296px;
+    width: 290px;
     height: 150px;
   }
 }
@@ -349,7 +349,7 @@ a {
 }
 @media screen and (max-width: 376px) {
   .Nouveau {
-    margin-left: 200px;
+    margin-left: 195px;
     margin-top: -187px;
   }
 }
