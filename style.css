@@ -46,7 +46,7 @@ input {
   font-weight: bold;
   font-family: "roboto";
   text-align: center;
-  width: 120px;
+  width: 130px;
   font-size: 1em;
 }
 
@@ -156,6 +156,11 @@ section article h4 i {
     width: 270px;
   }
 }
+@media screen and (max-width: 321px) {
+  section article h4 {
+    width: 245px;
+  }
+}
 section article h4 i {
   font-size: 1.3em;
 }
@@ -244,6 +249,16 @@ figure img {
     width: 280px;
   }
 }
+@media screen and (max-width: 321px) {
+  figure {
+    width: 240px;
+    height: 210px;
+  }
+  figure img {
+    width: 240px;
+    height: 140px;
+  }
+}
 .icon {
   text-align: right;
   color: black;
@@ -315,6 +330,12 @@ a {
 @media screen and (max-width: 361px) {
   .Nouveau {
     margin-left: 185px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .Nouveau {
+    margin-left: 145px;
+    margin-top: -175px;
   }
 }
 
