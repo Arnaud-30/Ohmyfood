@@ -87,6 +87,18 @@ figure {
     }
 }
 
+@media screen and (max-width: 321px) {
+    figure {
+        width: 240px;
+        height: 210px;
+
+        img {
+            width: 240px;
+            height: 140px;
+        }
+    }
+}
+
 .icon {
     text-align: right;
     color: black;
@@ -153,5 +165,10 @@ a {
 
     @media screen and (max-width: 361px) {
         margin-left: 185px;
+    }
+
+    @media screen and (max-width: 321px) {
+        margin-left: 145px;
+        margin-top: -175px;
     }
 }
