@@ -226,6 +226,24 @@ figure img {
     height: 170px;
   }
 }
+@media screen and (max-width: 376px) {
+  figure {
+    width: 296px;
+    height: 220px;
+  }
+  figure img {
+    width: 296px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 376px) and (max-width: 361px) {
+  figure {
+    width: 280px;
+  }
+  figure img {
+    width: 280px;
+  }
+}
 .icon {
   text-align: right;
   color: black;
@@ -240,6 +258,11 @@ figcaption h2 {
   color: black;
   margin-left: 15px;
   margin-top: 10px;
+}
+@media screen and (max-width: 376px) {
+  figcaption h2 {
+    font-size: 1.1em;
+  }
 }
 
 figcaption h3 {
@@ -281,6 +304,17 @@ a {
     width: 70px;
     padding: 7px;
     font-size: 1em;
+  }
+}
+@media screen and (max-width: 376px) {
+  .Nouveau {
+    margin-left: 200px;
+    margin-top: -187px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .Nouveau {
+    margin-left: 185px;
   }
 }
 
