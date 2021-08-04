@@ -207,16 +207,32 @@ figure img {
   object-fit: cover;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 824px) {
   figure {
-    width: 650px;
+    width: 585px;
     height: 270px;
     margin-bottom: 10px;
   }
   figure img {
-    width: 650px;
+    width: 585px;
     height: 190px;
     object-fit: cover;
+  }
+}
+@media screen and (max-width: 641px) {
+  figure {
+    width: 560px;
+  }
+  figure img {
+    width: 560px;
+  }
+}
+@media screen and (max-width: 569px) {
+  figure {
+    width: 450px;
+  }
+  figure img {
+    width: 450px;
   }
 }
 @media screen and (max-width: 415px) {
@@ -306,10 +322,20 @@ a {
   color: #16a581;
   font-weight: bold;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 824px) {
   .Nouveau {
-    margin-left: 510px;
-    margin-top: -220px;
+    margin-left: 460px;
+    margin-top: -230px;
+  }
+}
+@media screen and (max-width: 641px) {
+  .Nouveau {
+    margin-left: 430px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .Nouveau {
+    margin-left: 320px;
   }
 }
 @media screen and (max-width: 415px) {
