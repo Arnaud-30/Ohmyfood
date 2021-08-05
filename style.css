@@ -21,6 +21,13 @@ body {
   color: black;
 }
 
+header .fa-arrow-left {
+  font-size: 1.5em;
+  position: absolute;
+  top: 32px;
+  left: 20px;
+}
+
 .map {
   background: #f6f6f6;
   text-align: center;
@@ -363,6 +370,27 @@ a {
     margin-left: 145px;
     margin-top: -175px;
   }
+}
+
+.image img {
+  width: 400px;
+  height: 270px;
+  object-fit: cover;
+}
+
+.image {
+  text-align: center;
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 767px) {
+  .image img {
+    width: 100%;
+    margin-top: -10px;
+  }
+}
+.font_restaurant {
+  background-color: #eaeaea;
 }
 
 .pied_de_page {
