@@ -386,6 +386,84 @@ a {
   }
 }
 
+#color_fond {
+  background-color: #eaeaea;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  #color_fond {
+    background-color: white;
+  }
+}
+
+.titre_restaurant2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.titre {
+  font-size: 1.6em;
+  font-family: "shrikhand", sans-serif;
+  margin-left: 20px;
+}
+
+.coeur {
+  margin-top: 27px;
+  margin-left: 80px;
+  font-size: 1.6em;
+}
+
+@media screen and (max-width: 415px) {
+  #color_fond {
+    background-color: #eaeaea;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -65px;
+    position: relative;
+  }
+
+  .titre_restaurant2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .titre_restaurant2 .titre {
+    font-size: 1.6em;
+    font-family: "shrikhand", sans-serif;
+    margin-left: 20px;
+  }
+  .titre_restaurant2 .coeur {
+    margin-top: 27px;
+    margin-right: 36px;
+    font-size: 1.6em;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 358px) {
+  #color_fond {
+    background-color: #eaeaea;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -65px;
+    position: relative;
+  }
+
+  .titre_restaurant2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .titre_restaurant2 .titre {
+    font-size: 1.4em;
+    font-family: "shrikhand", sans-serif;
+    margin-left: 20px;
+  }
+  .titre_restaurant2 .coeur {
+    margin-top: 25px;
+    margin-right: 26px;
+    font-size: 1.4em;
+    margin-left: 0;
+  }
+}
 .pied_de_page {
   background-color: #595959;
   padding: 10px;
