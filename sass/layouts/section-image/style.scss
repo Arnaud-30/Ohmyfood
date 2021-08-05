@@ -1,0 +1,21 @@
+.image img {
+    width: 400px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.image {
+    text-align: center;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 767px) {
+    .image img {
+        width: 100%;
+        margin-top: -10px;
+    }
+}
+
+.font_restaurant {
+    background-color: $color-recherche-ville;
+}
