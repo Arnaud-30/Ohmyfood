@@ -13,3 +13,18 @@ header .fa-arrow-left {
     top: 32px;
     left: 20px;
 }
+
+header img {
+    width: 400px;
+    height: 270px;
+    object-fit: cover;
+    text-align: center;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 767px) {
+    header img {
+        width: 100%;
+        margin-top: -10px;
+    }
+}
