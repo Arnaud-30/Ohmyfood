@@ -121,7 +121,7 @@ figure {
 
 .icon {
     text-align: right;
-    color: black;
+    color: rgb(54, 52, 52);
     font-size: 1.5em;
     margin-top: -60px;
     margin-right: 20px;
@@ -140,11 +140,16 @@ figcaption h2 {
 }
 
 figcaption h3 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: "roboto";
-    color: rgb(51, 49, 49);
+    color: rgb(54, 52, 52);
+    font-weight: 400;
     margin-left: 15px;
-    margin-top: -8px;
+    margin-top: -10px;
+
+    @media screen and (max-width: 376px) {
+        font-size: 1em;
+    }
 }
 
 a {
