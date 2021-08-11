@@ -1,0 +1,95 @@
+.contenu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .conteneur {
+        margin: 30px;
+        margin-top: 0px;
+    }
+
+    .titre_h2_restaurant {
+        font-size: 1.1em;
+        margin-left: 10px;
+        border-bottom: 3px solid $color-tertiaire;
+        width: 45px;
+        font-weight: 400;
+        font-family: 'roboto';
+    }
+    @media screen and (max-width: 340px) {
+        font-size: 0.9em;
+    }
+}
+
+.ensemble {
+    width: 370px;
+    height: 70px;
+    box-shadow: 5px 5px 10px #b4b2b8;
+    background: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+
+    @media screen and (max-width: 390px) {
+        width: 355px;
+    }
+    .titre_h3 {
+        margin-left: 5px;
+        padding: 10px;
+        font-size: 1.23em;
+        font-family: "Roboto";
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.para_prix {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-family: "roboto";
+    margin-top: -40px;
+    margin-left: 15px;
+    font-size: 1em;
+    font-weight: 400; /* Marche pas, pourquoi ? */
+
+    .para {
+        text-overflow: ellipsis; /* text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé */
+        overflow: hidden; /* overflow définit comment gérer le dépassement du contenu */
+        white-space: nowrap; /* white-space est utilisée pour décrire la façon dont les blancs sont gérés au sein de l'élément (Pour depasser si besion) */
+        /* https://developer.mozilla.org/fr/docs/Web/CSS/white-space */
+    }
+
+    .prix {
+        margin-right: 20px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .para_prix {
+        margin-left: 15px;
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .para_prix {
+        margin-left: -5px;
+        margin-top: -43px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .ensemble {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .ensemble {
+        width: 300px;
+    }
+}
