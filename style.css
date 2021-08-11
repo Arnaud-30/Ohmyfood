@@ -298,7 +298,7 @@ figure img {
 }
 .icon {
   text-align: right;
-  color: black;
+  color: #363434;
   font-size: 1.5em;
   margin-top: -60px;
   margin-right: 20px;
@@ -318,11 +318,17 @@ figcaption h2 {
 }
 
 figcaption h3 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "roboto";
-  color: #333131;
+  color: #363434;
+  font-weight: 400;
   margin-left: 15px;
-  margin-top: -8px;
+  margin-top: -10px;
+}
+@media screen and (max-width: 376px) {
+  figcaption h3 {
+    font-size: 1em;
+  }
 }
 
 a {
@@ -414,7 +420,26 @@ a {
   font-size: 1.6em;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 768px) {
+  #color_fond {
+    background-color: #eaeaea;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -65px;
+    position: relative;
+  }
+
+  .titre_restaurant2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .titre_restaurant2 .coeur {
+    margin-top: 27px;
+    margin-right: 36px;
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 418px) {
   #color_fond {
     background-color: #eaeaea;
     border-radius: 40px 40px 0px 0px;
@@ -464,6 +489,129 @@ a {
     margin-left: 0;
   }
 }
+.contenu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contenu .conteneur {
+  margin: 30px;
+  margin-top: 0px;
+}
+.contenu .titre_h2_restaurant {
+  font-size: 1.1em;
+  margin-left: 10px;
+  border-bottom: 3px solid #99E2D0;
+  width: 45px;
+  font-weight: 400;
+  font-family: "roboto";
+}
+@media screen and (max-width: 340px) {
+  .contenu {
+    font-size: 0.9em;
+  }
+}
+
+.ensemble {
+  width: 370px;
+  height: 70px;
+  box-shadow: 5px 5px 10px #b4b2b8;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 390px) {
+  .ensemble {
+    width: 355px;
+  }
+}
+.ensemble .titre_h3 {
+  margin-left: 5px;
+  padding: 10px;
+  font-size: 1.23em;
+  font-family: "Roboto";
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.para_prix {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-family: "roboto";
+  margin-top: -40px;
+  margin-left: 15px;
+  font-size: 1em;
+  font-weight: 400;
+  /* Marche pas, pourquoi ? */
+}
+.para_prix .para {
+  text-overflow: ellipsis;
+  /* text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé */
+  overflow: hidden;
+  /* overflow définit comment gérer le dépassement du contenu */
+  white-space: nowrap;
+  /* white-space est utilisée pour décrire la façon dont les blancs sont gérés au sein de l'élément (Pour depasser si besion) */
+  /* https://developer.mozilla.org/fr/docs/Web/CSS/white-space */
+}
+.para_prix .prix {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 650px) {
+  .para_prix {
+    margin-left: 15px;
+    margin-top: -40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .para_prix {
+    margin-left: -5px;
+    margin-top: -43px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .ensemble {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .ensemble {
+    width: 300px;
+  }
+}
+.commander {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: -40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_commande {
+  height: 43px;
+  width: 160px;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  /* crée une image constituée d'une transition progressive entre deux ou plusieurs couleurs */
+  color: white;
+  font-size: 1em;
+  font-family: "roboto";
+  margin-bottom: 0px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.button_commande:hover {
+  opacity: 0.8;
+  box-shadow: 0px 5px 10px #b4b2b8;
+}
+
 .pied_de_page {
   background-color: #595959;
   padding: 10px;
