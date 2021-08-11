@@ -1,0 +1,27 @@
+.commander {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: -40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_commande {
+    height: 43px;
+    width: 160px;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    background: linear-gradient(#FF79DA, #9356DC); /* crée une image constituée d'une transition progressive entre deux ou plusieurs couleurs */
+    color: white;
+    font-size: 1em;
+    font-family: 'roboto';
+    margin-bottom: 0px;
+    margin-top: 12px;
+    cursor: pointer;
+   
+    &:hover {
+        opacity: 0.80;
+        box-shadow: 0px 5px 10px #b4b2b8;
+    }
+}
