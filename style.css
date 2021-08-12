@@ -13,7 +13,6 @@
 }
 /* Fichier variable déclaration */
 body {
-  font-family: "roboto";
   margin: 0;
   padding: 0;
 }
@@ -81,14 +80,15 @@ input {
 }
 .description h1 {
   font-size: 1.7em;
-  font-weight: bold;
   margin: 30px;
   font-family: "roboto";
+  font-weight: 700;
 }
 .description p {
   font-size: 1.1em;
   margin-top: -10px;
   font-family: "roboto";
+  font-weight: 300;
 }
 
 @media screen and (max-width: 500px) {
@@ -106,6 +106,7 @@ input {
   color: white;
   font-size: 0.9em;
   font-family: "roboto";
+  font-weight: 400;
   margin-bottom: 50px;
   margin-top: 12px;
   cursor: pointer;
@@ -158,8 +159,7 @@ section article h4 {
   box-shadow: 0px 5px 10px #b4b2b8;
   padding: 20px;
   line-height: 30px;
-  color: black;
-  font-weight: bold;
+  font-weight: 700;
   font-family: "roboto", sans-serif;
   cursor: pointer;
 }
@@ -202,6 +202,8 @@ section article {
   text-align: center;
   font-size: 1.7em;
   padding: 30px;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
 }
 @media screen and (max-width: 500px) {
   .restaurant #h2_restaurant {
@@ -303,7 +305,7 @@ figure img {
 }
 .icon {
   text-align: right;
-  color: #363434;
+  color: #333333;
   font-size: 1.5em;
   margin-top: -60px;
   margin-right: 20px;
@@ -325,8 +327,8 @@ figcaption h2 {
 figcaption h3 {
   font-size: 1.2em;
   font-family: "roboto";
-  color: #363434;
-  font-weight: 400;
+  color: black;
+  font-weight: 300;
   margin-left: 15px;
   margin-top: -10px;
 }
@@ -551,7 +553,6 @@ a {
   margin-left: 15px;
   font-size: 1em;
   font-weight: 400;
-  /* Marche pas, pourquoi ? */
 }
 .para_prix .para {
   text-overflow: ellipsis;
@@ -634,6 +635,7 @@ a {
   margin-top: 10px;
   margin-left: -20px;
   list-style-type: none;
+  font-family: "roboto";
 }
 .list_footer a {
   font-size: 1em;
