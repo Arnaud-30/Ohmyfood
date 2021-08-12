@@ -1,9 +1,15 @@
 @font-face {
-    font-family: "shrikhand regular";
-    src: url(Shrikhand/Shrikhand-Regular.ttf);
+    font-family: "shrikhand";
+    src: url(sass/base/polices/Shrikhand/Shrikhand-Regular.ttf);
 }
 
 @font-face {
-    font-family: "roboto regular";
-    src: url(Roboto/Roboto-Regular.ttf);
+    font-family: "roboto";
+    src: url(sass/base/polices/Roboto/Roboto-Regular.ttf);
 }
+  
+  @font-face {
+    font-family: "roboto-black";
+    src: url(sass/base/polices/Roboto/Roboto-Black.ttf);
+}
+  
