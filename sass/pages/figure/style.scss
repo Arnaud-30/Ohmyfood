@@ -5,6 +5,8 @@
         text-align: center;
         font-size: 1.7em;
         padding: 30px;
+        font-family: "roboto", sans-serif;
+        font-weight: bold;
 
         @media screen and (max-width: 500px) {
             text-align: left;
@@ -121,7 +123,7 @@ figure {
 
 .icon {
     text-align: right;
-    color: rgb(54, 52, 52);
+    color: rgb(51, 51, 51);
     font-size: 1.5em;
     margin-top: -60px;
     margin-right: 20px;
@@ -142,8 +144,8 @@ figcaption h2 {
 figcaption h3 {
     font-size: 1.2em;
     font-family: "roboto";
-    color: rgb(54, 52, 52);
-    font-weight: 400;
+    color: black;
+    font-weight: 300;
     margin-left: 15px;
     margin-top: -10px;
 
