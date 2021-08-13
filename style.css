@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* ---------- Font shrihand logo, titre et roboto le reste ---------- */
 @font-face {
   font-family: "shrikhand";
   src: url(sass/base/polices/Shrikhand/Shrikhand-Regular.ttf);
@@ -12,11 +13,13 @@
   src: url(sass/base/polices/Roboto/Roboto-Black.ttf);
 }
 /* Fichier variable déclaration */
+/* ---------- Body corp du document ---------- */
 body {
   margin: 0;
   padding: 0;
 }
 
+/* ---------- Header, font shrihand ---------- */
 #titre_logo {
   text-align: center;
   font-family: "shrikhand";
@@ -46,6 +49,7 @@ header img {
     margin-top: -10px;
   }
 }
+/* ---------- Explorez, input, h1 ---------- */
 .map {
   background: #f6f6f6;
   text-align: center;
@@ -96,13 +100,13 @@ input {
     margin: 20px;
   }
 }
+/* ---------- Bouton explorez nos restaurant ---------- */
 .button_explorez {
   height: 43px;
   width: 210px;
   border: none;
   border-radius: 20px 20px 20px 20px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  /* crée une image constituée d'une transition progressive entre deux ou plusieurs couleurs */
+  background: linear-gradient(#FF79DA, #9356DC); /* crée une image constituée d'une transition progressive entre deux ou plusieurs couleurs */
   color: white;
   font-size: 0.9em;
   font-family: "roboto";
@@ -116,6 +120,7 @@ input {
   box-shadow: 0px 5px 10px #b4b2b8;
 }
 
+/* ---------- Section fonctionnement ---------- */
 section h2 {
   text-align: center;
   margin-top: 40px;
@@ -195,6 +200,7 @@ section article {
   margin-top: -15px;
 }
 
+/* ---------- Figure restaurant page accueil ---------- */
 .restaurant {
   background-color: #eaeaea;
 }
@@ -399,6 +405,7 @@ a {
   }
 }
 
+/* ---------- Titre avec coeur page restarant ---------- */
 #color_fond {
   background-color: #eaeaea;
   position: relative;
@@ -496,6 +503,7 @@ a {
     margin-left: 0;
   }
 }
+/* ---------- Bouton page restaurant x9 - x10 - x9 - x9 ---------- */
 .contenu {
   width: 100%;
   display: flex;
@@ -590,6 +598,7 @@ a {
     width: 300px;
   }
 }
+/* ---------- Bonton commander, page restaurant ---------- */
 .commander {
   width: 100%;
   display: flex;
@@ -618,6 +627,7 @@ a {
   box-shadow: 0px 5px 10px #b4b2b8;
 }
 
+/* ---------- Footer, liste à puce liens HyperText ---------- */
 .pied_de_page {
   background-color: #595959;
   padding: 10px;
