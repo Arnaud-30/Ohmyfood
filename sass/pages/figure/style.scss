@@ -123,11 +123,24 @@ figure {
 }
 
 .icon {
-    text-align: right;
-    color: rgb(51, 51, 51);
-    font-size: 1.5em;
+    width: 30px;
     margin-top: -60px;
+    margin-left: auto;
     margin-right: 20px;
+    font-size: 1.5em;
+    color: transparent; /* Permet de mettre un élément transparent */
+    -webkit-text-stroke: 2px #000000; /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone*/
+    opacity: 0.4; /* Opacité d'un élément */
+    
+}
+
+.icon:hover {
+    background: linear-gradient(80deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text; /*  La zone d'arrière-plan s'étend dans le texte. (La forme) https://www.zonecss.fr/proprietes-css/webkit-background-clip-css.html */
+    -webkit-text-stroke: 0px; /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone */
+    opacity: 1;
+    transition: cubic-bezier(0.90, 1, 0.60, 0.70), opacity 700ms ease-in 100ms; /* cubic 2 première pour la progression 2 suivant pour la durer, opacity la durer de l'opacity */
+    /* ease-in 100ms le temps que le coeur arrive au bout la durer de l'éclaircissement */
 }
 
 figcaption h2 {
