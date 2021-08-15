@@ -36,7 +36,7 @@ header .fa-arrow-left {
 }
 
 header img {
-  width: 400px;
+  width: 100%;
   height: 270px;
   object-fit: cover;
   text-align: center;
@@ -106,7 +106,8 @@ input {
   width: 210px;
   border: none;
   border-radius: 20px 20px 20px 20px;
-  background: linear-gradient(#FF79DA, #9356DC); /* crée une image constituée d'une transition progressive entre deux ou plusieurs couleurs */
+  background: linear-gradient(#FF79DA, #9356DC);
+  /* crée une image constituée d'une transition progressive entre deux ou plusieurs couleurs */
   color: white;
   font-size: 0.9em;
   font-family: "roboto";
@@ -310,11 +311,29 @@ figure img {
   }
 }
 .icon {
-  text-align: right;
-  color: #333333;
-  font-size: 1.5em;
+  width: 30px;
   margin-top: -60px;
+  margin-left: auto;
   margin-right: 20px;
+  font-size: 1.5em;
+  color: transparent;
+  /* Permet de mettre un élément transparent */
+  -webkit-text-stroke: 2px #000000;
+  /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone*/
+  opacity: 0.4;
+  /* Opacité d'un élément */
+}
+
+.icon:hover {
+  background: linear-gradient(80deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  /*  La zone d'arrière-plan s'étend dans le texte. (La forme) https://www.zonecss.fr/proprietes-css/webkit-background-clip-css.html */
+  -webkit-text-stroke: 0px;
+  /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone */
+  opacity: 1;
+  transition: cubic-bezier(0.9, 1, 0.6, 0.7), opacity 700ms ease-in 100ms;
+  /* cubic 2 première pour la progression 2 suivant pour la durer, opacity la durer de l'opacity */
+  /* ease-in 100ms le temps que le coeur arrive au bout la durer de l'éclaircissement */
 }
 
 figcaption h2 {
@@ -432,6 +451,24 @@ a {
   margin-top: 27px;
   margin-left: 80px;
   font-size: 1.6em;
+  color: transparent;
+  /* Permet de mettre un élément transparent */
+  -webkit-text-stroke: 2px #000000;
+  /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone*/
+  opacity: 0.4;
+  /* Opacité d'un élément */
+}
+
+.coeur:hover {
+  background: linear-gradient(80deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  /*  La zone d'arrière-plan s'étend dans le texte. (La forme) https://www.zonecss.fr/proprietes-css/webkit-background-clip-css.html */
+  -webkit-text-stroke: 0px;
+  /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone */
+  opacity: 1;
+  transition: cubic-bezier(0.9, 1, 0.6, 0.7), opacity 700ms ease-in 100ms;
+  /* cubic 2 première pour la progression 2 suivant pour la durer, opacity la durer de l'opacity */
+  /* ease-in 100ms le temps que le coeur arrive au bout la durer de l'éclaircissement */
 }
 
 @media screen and (max-width: 768px) {
