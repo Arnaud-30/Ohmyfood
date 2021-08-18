@@ -27,59 +27,83 @@
 .ensemble {
     width: 370px;
     height: 70px;
-    box-shadow: 5px 5px 10px #b4b2b8;
+    box-shadow: 5px 5px 10px $color-boxshadow-btn-restaurant;
     background: #fff;
     border-radius: 20px;
     cursor: pointer;
-
+    animation: trans 20ms linear; /* Animation 20 ms avec un linear (pas d'accentuation à l'accélération ou à la décélération. Sa courbe est totalement droite du point A au point B) */
+    -webkit-animation: trans 20ms linear; /* Idem pour Chrome (prefix) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
     @media screen and (max-width: 390px) {
         width: 355px;
     }
+}
+
+article .cascade_1 { /* class crée  1=500ms en linear, 2=700ms linear, 3=900ms linear, 4=1100ms linear */
+    animation: trans 500ms linear;
+    -webkit-animation: trans 500ms linear; /* chrome */
+}
+article .cascade_2 {
+    animation: trans 700ms linear;
+    -webkit-animation: trans 700ms linear;
+}
+article .cascade_3 {
+    animation: trans 900ms linear;
+    -webkit-animation: trans 900ms linear;
+}
+article .cascade_4 {
+    animation: trans 900ms linear;
+    -webkit-animation: trans 1100ms linear;
+}
+
+.titre_ensemble {
+    font-family: "roboto";
+    width: 80%;
+    margin-left: 15px;
+    font-size: 1em;
+    font-weight: 400;
+    text-overflow: ellipsis; /* text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé  les 3 petits points */
+    overflow: hidden; /* overflow définit comment gérer le dépassement du contenu */
+    white-space: nowrap; /* white-space est utilisée pour décrire la façon dont les blancs sont gérés au sein de l'élément (Pour depasser si besion) */
+    /* https://developer.mozilla.org/fr/docs/Web/CSS/white-space */
+    }
+
     .titre_h3 {
-        margin-left: 5px;
-        padding: 10px;
-        font-size: 1.23em;
-        font-family: "Roboto";
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: 10px;
+        
+    }
+    .para {
+        margin-top: -15px;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
     }
-}
-
-.para_prix {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    font-family: "roboto";
-    margin-top: -40px;
-    margin-left: 15px;
-    font-size: 1em;
-    font-weight: 400;
-
-    .para {
-        text-overflow: ellipsis; /* text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé */
-        overflow: hidden; /* overflow définit comment gérer le dépassement du contenu */
-        white-space: nowrap; /* white-space est utilisée pour décrire la façon dont les blancs sont gérés au sein de l'élément (Pour depasser si besion) */
-        /* https://developer.mozilla.org/fr/docs/Web/CSS/white-space */
-    }
 
     .prix {
-        margin-right: 20px;
+        display: flex;
+        text-align: left;
         font-weight: bold;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px; 
     }
-}
 
 @media screen and (max-width: 650px) {
-    .para_prix {
-        margin-left: 15px;
-        margin-top: -40px;
+    .para {
+        margin-left: 0px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .para_prix {
-        margin-left: -5px;
-        margin-top: -43px;
+    .para {
+        margin-left: 0px;
     }
 }
 
@@ -94,3 +118,43 @@
         width: 300px;
     }
 }
+
+@keyframes trans { /* Un effet des bouton position Y translate 100% à 0% */
+    /* https://openclassrooms.com/fr/courses/5919246-creez-des-animations-css-modernes/6340919-creez-des-animations-fluides-avec-la-propriete-css-transform */
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+.rotate { /* align et justify permets de center l'icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 50%; /* Aparition 50%  conbiné avec le width hover rotate ligne 154*/
+    max-width: 0; /* A sa disparition max 0 */ 
+    overflow: hidden;
+    background-color: $color-tertiaire;
+    transition: all 0.5s linear; /* all  permet d’appliquer des transitions simultanément */
+    
+  }
+  .fa-check-circle {
+    color: $color-blanche;
+    font-size: 1.4em;
+    transition: all 0.5s linear;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ensemble:hover .rotate {
+    max-width: 50px;
+    border-radius: 0px 19px 19px 0px;
+  }
+  .ensemble:hover .fa-check-circle {
+    transform: rotateZ(360deg); /* Ratation au survol du button à 360deg */
+  }
