@@ -572,7 +572,7 @@ a {
   height: 70px;
   box-shadow: 5px 5px 10px #b4b2b8;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 19px;
   cursor: pointer;
   animation: trans 20ms linear;
   /* Animation 20 ms avec un linear (pas d'accentuation à l'accélération ou à la décélération. Sa courbe est totalement droite du point A au point B) */
@@ -582,6 +582,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  overflow: hidden;
 }
 @media screen and (max-width: 390px) {
   .ensemble {
@@ -607,7 +608,7 @@ article .cascade_3 {
 }
 
 article .cascade_4 {
-  animation: trans 900ms linear;
+  animation: trans 1100ms linear;
   -webkit-animation: trans 1100ms linear;
 }
 
@@ -775,6 +776,96 @@ article .cascade_4 {
 
 i {
   margin-right: 10px;
+}
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: loader 0.01s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.loader__item {
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  animation: saut 1s;
+  animation-iteration-count: 1;
+  margin: 0;
+}
+
+.loader__item_ensemble {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  border: 5px solid #99E2D0;
+  padding: 8px;
+  color: #fff;
+}
+
+.loader__item--1 {
+  background-color: #9356dc;
+  animation-delay: 0.25s;
+}
+
+.loader__item--2 {
+  background-color: #ff79da;
+  animation-delay: 0.5s;
+}
+
+.loader__item--3 {
+  background-color: #99e2d0;
+  animation-delay: 0.25s;
+}
+
+.loader__item--4 {
+  background-color: #9356dc;
+  animation-delay: 0.5s;
+}
+
+.loader__item--5 {
+  background-color: #ff79da;
+  animation-delay: 0.25s;
+}
+
+.loader__item--6 {
+  background-color: #99e2d0;
+  animation-delay: 0.5s;
+}
+
+.loader__item--7 {
+  background-color: #9356dc;
+  animation-delay: 0.25s;
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes saut {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0.5em);
+  }
+  50% {
+    transform: translateY(-0.5em);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
