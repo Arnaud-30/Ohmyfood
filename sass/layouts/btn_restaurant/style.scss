@@ -29,7 +29,7 @@
     height: 70px;
     box-shadow: 5px 5px 10px $color-boxshadow-btn-restaurant;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 19px;
     cursor: pointer;
     animation: trans 20ms linear; /* Animation 20 ms avec un linear (pas d'accentuation à l'accélération ou à la décélération. Sa courbe est totalement droite du point A au point B) */
     -webkit-animation: trans 20ms linear; /* Idem pour Chrome (prefix) */
@@ -37,6 +37,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    overflow: hidden;
     
     @media screen and (max-width: 390px) {
         width: 355px;
@@ -56,7 +57,7 @@ article .cascade_3 {
     -webkit-animation: trans 900ms linear;
 }
 article .cascade_4 {
-    animation: trans 900ms linear;
+    animation: trans 1100ms linear;
     -webkit-animation: trans 1100ms linear;
 }
 
@@ -142,19 +143,21 @@ article .cascade_4 {
     overflow: hidden;
     background-color: $color-tertiaire;
     transition: all 0.5s linear; /* all  permet d’appliquer des transitions simultanément */
-    
-  }
-  .fa-check-circle {
+}
+
+.fa-check-circle {
     color: $color-blanche;
     font-size: 1.4em;
     transition: all 0.5s linear;
     margin-left: auto;
     margin-right: auto;
-  }
-  .ensemble:hover .rotate {
+}
+
+.ensemble:hover .rotate {
     max-width: 50px;
     border-radius: 0px 19px 19px 0px;
-  }
-  .ensemble:hover .fa-check-circle {
+}
+
+.ensemble:hover .fa-check-circle {
     transform: rotateZ(360deg); /* Ratation au survol du button à 360deg */
-  }
+}
