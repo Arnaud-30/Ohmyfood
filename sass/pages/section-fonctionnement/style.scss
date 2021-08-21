@@ -20,7 +20,7 @@ section h2 {
     margin-top: 44px;
     margin-right: -15px;
     background-color: $color-primaire;
-    color: white;
+    color: $color-blanche;
     font-family: 'roboto';
     border-radius: 100%;
     padding: 7px;
@@ -38,7 +38,7 @@ section article h4 {
     height: 30px;
     background-color: #f0eeee;
     border-radius: 25px 25px 25px 25px;
-    box-shadow: 0px 5px 10px #b4b2b8;
+    box-shadow: 0px 5px 10px $color-boxshadow-btn-restaurant;
     padding: 20px;
     line-height: 30px;
     font-weight: 700;

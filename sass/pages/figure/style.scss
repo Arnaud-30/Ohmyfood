@@ -28,7 +28,7 @@
 
 figure {
     border-radius: 20px 20px 20px 20px;
-    background-color: white;
+    background-color: $color-blanche;
     width: 800px;
     height: 330px;
 
@@ -129,13 +129,13 @@ figure {
     margin-right: 20px;
     font-size: 1.5em;
     color: transparent; /* Permet de mettre un élément transparent */
-    -webkit-text-stroke: 2px #000000; /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone*/
+    -webkit-text-stroke: 2px $color-noir; /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone*/
     opacity: 0.4; /* Opacité d'un élément */
     
 }
 
 .icon:hover { /* https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes */
-    background: linear-gradient(80deg, #FF79DA, #9356DC);
+    background: linear-gradient(80deg, $color-secondaire, $color-primaire);
     -webkit-background-clip: text; /*  La zone d'arrière-plan s'étend dans le texte. (La forme) https://www.zonecss.fr/proprietes-css/webkit-background-clip-css.html */
     -webkit-text-stroke: 0px; /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone */
     opacity: 1;
@@ -146,7 +146,7 @@ figure {
 figcaption h2 {
     font-size: 1.3em;
     font-family: "roboto";
-    color: black;
+    color: $color-noir;
     margin-left: 15px;
     margin-top: 10px;
 
@@ -158,7 +158,7 @@ figcaption h2 {
 figcaption h3 {
     font-size: 1.2em;
     font-family: "roboto";
-    color: black;
+    color: $color-noir;
     font-weight: 300;
     margin-left: 15px;
     margin-top: -10px;
@@ -183,7 +183,7 @@ a {
     background-color: $color-tertiaire;
     text-align: center;
     border-radius: 1px 1px 1px 1px;
-    color: #16a581;
+    color: $color-vert-fonce;
     font-weight: bold;
 
     @media screen and (max-width: 824px) {

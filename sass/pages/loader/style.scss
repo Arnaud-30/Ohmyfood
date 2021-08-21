@@ -1,11 +1,15 @@
+/* ---------- Loader - LOADING ---------- */
 .loader {
-    position: fixed;
+    position: fixed; /* Position fixex 100 100 */
     height: 100%;
     width: 100%;
     animation: loader .01s;
-    animation-delay: 3s;
-    animation-fill-mode: both;
-    z-index: 10000;
+    animation-fill-mode: both; /*  indique la façon dont une animation CSS doit appliquer les styles avec animation-delay qui définit la durée d'attente avant de démarrer une animation*/
+    animation-delay: 3s; /* Durer de l'animation */
+    z-index: 10000; /* La propriété z-index permet de préciser l'empilement de certains éléments d'une page */
+    /* https://www.alsacreations.com/astuce/lire/84-Comment-fonctionne-la-propriete-CSS-z-index-.html */
+
+    /* Aucun bord et center milieu avec un background */
     display: flex;
     top: 0;
     align-items: center;
@@ -18,8 +22,8 @@
     line-height: 30px;
     height: 30px;
     width: 30px;
-    animation: saut 1s;
-    animation-iteration-count: 1;
+    animation: saut 1s; /* Animation pour le Keyframes en bas du code  le temps que les carrés qui bouge entre eux */
+    animation-iteration-count: 1; /* indique le nombre de cycles utilisés pour répéter une animation */
     margin: 0;
 }
 
@@ -32,53 +36,53 @@
     color: $color-blanche;
 }
 .loader__item--1 {
-    background-color: #9356dc;
-    animation-delay: .25s;
+    background-color: $color-primaire;
+    animation-delay: .25s; /* Pour avoir un bonne intervale entre les item */
 }
 .loader__item--2 {
-    background-color: #ff79da;
+    background-color: $color-secondaire;
     animation-delay: .50s;
 }
 .loader__item--3 {
-    background-color: #99e2d0;
+    background-color: $color-tertiaire;
     animation-delay: .25s;
 }
 .loader__item--4 {
-    background-color: #9356dc;
+    background-color: $color-primaire;
     animation-delay: .50s;
 }
 .loader__item--5 {
-    background-color: #ff79da;
+    background-color: $color-secondaire;
     animation-delay: .25s;
 }
 .loader__item--6 {
-    background-color: #99e2d0;
+    background-color: $color-tertiaire;
     animation-delay: .50s;
 }
 .loader__item--7 {
-    background-color: #9356dc;
+    background-color: $color-primaire;
     animation-delay: .25s;
 }
 
 @keyframes loader {
     100% {
-        opacity: 0;
-        z-index: -10
+        opacity: 0; /* Aucune opacité */
+        z-index: -10; /* Permets de ne plus le voir et d'avoir accès aux site */
     }
 }
 
-@keyframes saut {
+@keyframes saut { /* Loading */
     0% {
         transform: translateY(0)
     }
     20% {
-        transform: translateY(.5em)
+        transform: translateY(.5em) /* Le point remplace le zéro faut voir 0.5 em */
     }
     50% {
-        transform: translateY(-.5em)
+        transform: translateY(-.5em) /* Idem en -5 */
     }
     
     100% {
-        transform: translateY(0)
+        transform: translateY(0) /* A 100 il ne bouge plus et le loader 2 seconde après disparaît */ 
     }
 }
