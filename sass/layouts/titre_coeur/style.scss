@@ -4,7 +4,7 @@
     position: relative;
 
     @media screen and (min-width: 768px) {
-        background-color: white;
+        background-color: $color-blanche;
     }
 }
 
@@ -25,12 +25,12 @@
     margin-left: 80px;
     font-size: 1.6em;
     color: transparent; /* Permet de mettre un élément transparent */
-    -webkit-text-stroke: 2px #000000; /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone*/
+    -webkit-text-stroke: 2px $color-noir; /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone*/
     opacity: 0.4; /* Opacité d'un élément */        
 }
 
 .coeur:hover {
-    background: linear-gradient(80deg, #FF79DA, #9356DC);
+    background: linear-gradient(80deg, $color-secondaire, $color-primaire);
     -webkit-background-clip: text; /*  La zone d'arrière-plan s'étend dans le texte. (La forme) https://www.zonecss.fr/proprietes-css/webkit-background-clip-css.html */
     -webkit-text-stroke: 0px; /* Permet de définir l'épaisseur et la couleur du contour Texte ou icone */
     opacity: 1;

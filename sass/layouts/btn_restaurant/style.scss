@@ -28,7 +28,7 @@
     width: 370px;
     height: 70px;
     box-shadow: 5px 5px 10px $color-boxshadow-btn-restaurant;
-    background: #fff;
+    background: $color-blanche;
     border-radius: 19px;
     cursor: pointer;
     animation: trans 20ms linear; /* Animation 20 ms avec un linear (pas d'accentuation à l'accélération ou à la décélération. Sa courbe est totalement droite du point A au point B) */
