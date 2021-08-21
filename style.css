@@ -25,7 +25,7 @@ body {
   font-family: "shrikhand";
 }
 #titre_logo a {
-  color: black;
+  color: #000000;
 }
 
 header .fa-arrow-left {
@@ -108,7 +108,7 @@ input {
   border-radius: 20px 20px 20px 20px;
   background: linear-gradient(#FF79DA, #9356DC);
   /* crée une image constituée d'une transition progressive entre deux ou plusieurs couleurs */
-  color: white;
+  color: #fff;
   font-size: 0.9em;
   font-family: "roboto";
   font-weight: 400;
@@ -144,7 +144,7 @@ section h2 {
   margin-top: 44px;
   margin-right: -15px;
   background-color: #9356DC;
-  color: white;
+  color: #fff;
   font-family: "roboto";
   border-radius: 100%;
   padding: 7px;
@@ -231,7 +231,7 @@ section article {
 
 figure {
   border-radius: 20px 20px 20px 20px;
-  background-color: white;
+  background-color: #fff;
   width: 800px;
   height: 330px;
 }
@@ -340,7 +340,7 @@ figure img {
 figcaption h2 {
   font-size: 1.3em;
   font-family: "roboto";
-  color: black;
+  color: #000000;
   margin-left: 15px;
   margin-top: 10px;
 }
@@ -353,7 +353,7 @@ figcaption h2 {
 figcaption h3 {
   font-size: 1.2em;
   font-family: "roboto";
-  color: black;
+  color: #000000;
   font-weight: 300;
   margin-left: 15px;
   margin-top: -10px;
@@ -432,7 +432,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   #color_fond {
-    background-color: white;
+    background-color: #fff;
   }
 }
 
@@ -733,7 +733,7 @@ article .cascade_4 {
   border-radius: 20px 20px 20px 20px;
   background: linear-gradient(#FF79DA, #9356DC);
   /* crée une image constituée d'une transition progressive entre deux ou plusieurs couleurs */
-  color: white;
+  color: #fff;
   font-size: 1em;
   font-family: "roboto";
   margin-bottom: 0px;
@@ -753,7 +753,7 @@ article .cascade_4 {
   margin-top: 100px;
 }
 .pied_de_page h2 {
-  color: white;
+  color: #fff;
   font-size: 1.4em;
   margin-left: 20px;
   font-family: "shrikhand";
@@ -767,25 +767,32 @@ article .cascade_4 {
 }
 .list_footer a {
   font-size: 1em;
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 .list_footer a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #fff;
 }
 
 i {
   margin-right: 10px;
 }
 
+/* ---------- Loader - LOADING ---------- */
 .loader {
   position: fixed;
+  /* Position fixex 100 100 */
   height: 100%;
   width: 100%;
   animation: loader 0.01s;
-  animation-delay: 3s;
   animation-fill-mode: both;
+  /*  indique la façon dont une animation CSS doit appliquer les styles avec animation-delay qui définit la durée d'attente avant de démarrer une animation*/
+  animation-delay: 3s;
+  /* Durer de l'animation */
   z-index: 10000;
+  /* La propriété z-index permet de préciser l'empilement de certains éléments d'une page */
+  /* https://www.alsacreations.com/astuce/lire/84-Comment-fonctionne-la-propriete-CSS-z-index-.html */
+  /* Aucun bord et center milieu avec un background */
   display: flex;
   top: 0;
   align-items: center;
@@ -799,7 +806,9 @@ i {
   height: 30px;
   width: 30px;
   animation: saut 1s;
+  /* Animation pour le Keyframes en bas du code  le temps que les carrés qui bouge entre eux */
   animation-iteration-count: 1;
+  /* indique le nombre de cycles utilisés pour répéter une animation */
   margin: 0;
 }
 
@@ -813,47 +822,51 @@ i {
 }
 
 .loader__item--1 {
-  background-color: #9356dc;
+  background-color: #9356DC;
   animation-delay: 0.25s;
+  /* Pour avoir un bonne intervale entre les item */
 }
 
 .loader__item--2 {
-  background-color: #ff79da;
+  background-color: #FF79DA;
   animation-delay: 0.5s;
 }
 
 .loader__item--3 {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   animation-delay: 0.25s;
 }
 
 .loader__item--4 {
-  background-color: #9356dc;
+  background-color: #9356DC;
   animation-delay: 0.5s;
 }
 
 .loader__item--5 {
-  background-color: #ff79da;
+  background-color: #FF79DA;
   animation-delay: 0.25s;
 }
 
 .loader__item--6 {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   animation-delay: 0.5s;
 }
 
 .loader__item--7 {
-  background-color: #9356dc;
+  background-color: #9356DC;
   animation-delay: 0.25s;
 }
 
 @keyframes loader {
   100% {
     opacity: 0;
+    /* Aucune opacité */
     z-index: -10;
+    /* Permets de ne plus le voir et d'avoir accès aux site */
   }
 }
 @keyframes saut {
+  /* Loading */
   0% {
     transform: translateY(0);
   }
