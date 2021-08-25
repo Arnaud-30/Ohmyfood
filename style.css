@@ -880,5 +880,10 @@ i {
     transform: translateY(0);
   }
 }
+/* 
+    Différence animation et keyframes ? 
+        Les animations (transition) vont d'un point A à B.
+        Les keyframes peuvent évoluer au plus il y a des % 
+*/
 
 /*# sourceMappingURL=style.css.map */
