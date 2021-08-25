@@ -786,7 +786,7 @@ i {
   width: 100%;
   animation: loader 0.01s;
   animation-fill-mode: both;
-  /*  indique la façon dont une animation CSS doit appliquer les styles avec animation-delay qui définit la durée d'attente avant de démarrer une animation*/
+  /*  indique la façon dont une animation CSS doit appliquer les styles avec animation-delay qui définit la durée d'attente avant de démarrer une animation début et fin */
   animation-delay: 3s;
   /* Durer de l'animation */
   z-index: 10000;
